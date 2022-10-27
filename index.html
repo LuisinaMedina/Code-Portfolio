@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <div id="preloader"></div>
+
+    <!--------START HEADER SECTION--------->
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">Luisina Medina</div>
+            <input type="checkbox" id="nav-toggle">
+            <ul class="nav-links">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Projects</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <label for="nav-toggle" class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </label>
+        </nav>
+    </header>
+    <!-------END HEADER SECTION--------->
+
+    <!-------START HOME SECTION-------->
+    <main>
+        <section class="main-container" id="about">
+            <div class="home-content">
+                <div class="text-1"> Hi, My name is</div>
+                <div class="text-2"> Luisina Medina</div>
+                <div class="text-3"> And I am a <span class="typewriter"></span></div>
+                <a href="#contact"><button class="contact-button">Contact Now</button></a>
+            </div>
+            <div class="my-image">
+                <img src="images/myimgg.png" alt="My personal image" width="500" height="500">
+            </div>
+        </section>
+        <!--------ASIDE SOCIAL ICONS -------->
+        <div class="social-icons">
+            <ul class="icons">
+                <li><a href="mailto:luisinamedina@icloud.com"><i class="fa-solid fa-envelope icon"></i></a></li>
+                <li><a href="https://github.com/LuisinaMedina"><i class="fa-brands fa-github icon"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/luisinamedina/"><i class="fa-brands fa-linkedin icon"></i></a>
+                </li>
+            </ul>
+        </div>
+        <!----------------------------------->
+    </main>
+    <!---------END HOME SECTION----------->
+    <!---------START CONTACT SECTION---------->
+    <section class="contact-section">
+        <form class="contact-form">
+            <h3 class="horizontal-line">CONTACT ME</h3>
+            <h3 class="sub-title">Get In Touch</h3>
+
+            <input type="text" placeholder="Name" id="name" name="name" required>
+            <label for="name"></label>
+            <input type="email" placeholder="Email" id="email" name="email" required>
+            <label for="email"></label>
+            <input type="text" placeholder="Subject" id="subject" name="subject" required>
+            <label for="subject"></label>
+            <textarea id="message" placeholder="Your Message" name="message" rows="10" cols="30" required></textarea>
+            <label for="message"></label>
+            <button type="submit" class="btn-send">SEND MESSAGE</button>
+        </form>
+        <aside class="contact-info">
+            <div class="location">
+                <span><i class="fa-solid fa-location-dot"></i></span>
+                <h4>Location</h4>
+                <h5>Berlin, Germany</h5>
+            </div>
+            <div class="email">
+                <span><i class="fa-solid fa-envelope"></i></span>
+                <h4>Email</h4>
+                <h5><a href="mailto:luisinamedina@icloud.com">luisinamedina@icloud.com</a></h5>
+            </div>
+            <div class="phone">
+                <span><i class="fa-solid fa-phone"></i></span>
+                <h4>Phone</h4>
+                <h5><a href="tel:+4915161976913">+4915161976913</a></h5>
+            </div>
+        </aside>
+    </section>
+    <!-----------END CONTACT SECTION----------->
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
