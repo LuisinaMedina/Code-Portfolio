@@ -208,10 +208,52 @@ nav .hamburger .line {
 	box-shadow: 0px 0px 5px 5px var(--hover-color);
 }
 
+.projects-section {
+	padding: 96px 0px;
+	background-color: #252533;
+}
+
+.container {
+	color: var(--text-color);
+	display: flex;
+	flex-direction: column;
+	padding-left: 15%;
+}
+
+.projects-gallery {
+	width: 50%;
+	margin: 100px auto;
+	display: grid;
+	grid-gap: 50px;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	transition: 2s;
+}
+
+.image {
+	border-radius: 20px;
+	box-shadow: 0px -2px 42px 9px rgba(43, 34, 39, 0.72);
+}
+
+.image:hover {
+	transform: scale(1.1);
+	box-shadow: 0px -2px 42px 9px rgba(43, 34, 39, 0.72);
+}
+
+.background-wrapper {
+	height: 330px;
+	width: 390px;
+	background-color: var(--text-color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
 .contact-section {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	padding: 96px 0px;
 }
 
 .contact-form {
@@ -255,11 +297,6 @@ textarea {
 	padding: 0.5rem;
 }
 
-.contact-form h3,
-.btn-send {
-	margin: 1rem 0.5rem 0.5rem 2rem;
-}
-
 .btn-send {
 	width: 25%;
 	color: var(--yellow);
@@ -268,9 +305,16 @@ textarea {
 	justify-content: center;
 	padding: 0.5rem 0.5rem;
 	margin-top: 20px;
+	margin-left: 35px;
 	border-radius: 25px;
 	background-color: transparent;
 	border: 3px solid var(--yellow);
+}
+
+.btn-send:hover {
+	border: 3px solid var(--hover-color);
+	cursor: pointer;
+	color: var(--hover-color);
 }
 
 input:focus,
@@ -307,6 +351,38 @@ textarea:focus {
 
 span i {
 	color: var(--yellow);
+}
+
+.footer-section {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	background-color: var(--header-bg-color);
+}
+
+.footer-info {
+	margin-top: 25px;
+}
+.footer-info a {
+	color: var(--yellow);
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 1.3rem;
+}
+
+.footer-items {
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.footer-items li a {
+	color: inherit;
+	color: var(--nav-menu-color);
+	font-size: 1.7rem;
+	margin: 10px;
 }
 
 @media screen and (max-width: 768px) {
