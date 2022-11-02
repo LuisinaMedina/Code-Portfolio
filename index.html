@@ -13,6 +13,7 @@
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portfolio</title>
+    <link rel="icon" href="/Images/favicon.png">
 </head>
 
 <body>
@@ -21,13 +22,13 @@
     <!--------START HEADER SECTION--------->
     <header>
         <nav class="nav-bar">
-            <div class="logo">Luisina Medina</div>
+            <div class="logo">LUISINA MEDINA</div>
             <input type="checkbox" id="nav-toggle">
             <ul class="nav-links">
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Projects</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
             <label for="nav-toggle" class="hamburger">
                 <div class="line"></div>
@@ -40,7 +41,7 @@
 
     <!-------START HOME SECTION-------->
     <main>
-        <section class="main-container" id="about">
+        <section class="main-container" id="home">
             <div class="home-content">
                 <div class="text-1"> Hi, My name is</div>
                 <div class="text-2"> Luisina Medina</div>
@@ -63,25 +64,91 @@
         <!----------------------------------->
     </main>
     <!---------END HOME SECTION----------->
+    <!----------START ABOUT SECTION-------------->
+    <section class="about-section" id="about">
+        <div class="about-me">
+            <h3 class="horizontal-line">ABOUT ME</h3>
+            <h3 class="sub-title">Who I Am</h3>
+        </div>
+        <div class="about-wrapper">
+            <div class="about-info">
+                <p class="my-info"> I am a Berlin-based junior web developer, originally from Argentina that enjoys
+                    writing code. My interest in web development started one year ago when I decided to learn about
+                    HTML, CSS, and JS. I was lucky and I got the opportunity to participate in an amazing program
+                    called: Techstart, which gives me the chance of studying software engineering at one of the most
+                    prestigious universities in Berlin: CODE University of Applied Science. Even though, I am not
+                    experienced I can always bring creativity and passion to whatever is assigned to me. I have a unique
+                    talent to combine my acquired skills and knowledge to find a solution to various problems and I am
+                    confident in working independently as well as collaborating in rapidly changing environments.
+
+                </p>
+            </div>
+            <div class="container1">
+                <div class="skill-box">
+                    <span class="title">HTML</span>
+
+                    <div class="skill-bar">
+                        <span class="skill-per html">
+                            <span class="tooltip">95%</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <span class="title">CSS</span>
+
+                    <div class="skill-bar">
+                        <span class="skill-per css">
+                            <span class="tooltip">95%</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <span class="title">JAVASCRIPT</span>
+
+                    <div class="skill-bar">
+                        <span class="skill-per js">
+                            <span class="tooltip">75%</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <span class="title">EXPRESS/NODE JS</span>
+
+                    <div class="skill-bar">
+                        <span class="skill-per express-node">
+                            <span class="tooltip">50%</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class=" line-one">
+        <h3>HTML CSS JAVASCRIPT</h3>
+    </div>
+    <div class="line-two">
+        <h3>GIT NODE EXPRESS GITHUB </h3>
+    </div>
     <!---------START PROJECTS SECTION------------>
-    <section class="projects-section">
+    <section class="projects-section" id="projects">
         <div class="container">
             <h3 class="horizontal-line">MY PROJECTS</h3>
             <h3 class="sub-title">My Recent Works</h3>
         </div>
 
         <div class="projects-gallery">
-
             <div class="background-wrapper">
-                <img src="/Images/img1.png" width="300" height="250" class="image">
+                <a href="https://memegenerator-lm.netlify.app/" target="_blank"><img src="/Images/img1.png" width="300"
+                        height="250" class="image"></a>
             </div>
             <div class="background-wrapper">
-                <img src="/Images/img2.png" width="300" height="250" class="image">
+                <a href="" target="_blank"><img src="/Images/img2.png" width="300" height="250" class="image"></a>
             </div>
         </div>
+
     </section>
     <!---------START CONTACT SECTION---------->
-    <section class="contact-section">
+    <section class="contact-section" id="contact">
         <form class="contact-form">
             <h3 class="horizontal-line">CONTACT ME</h3>
             <h3 class="sub-title">Get In Touch</h3>
@@ -105,7 +172,8 @@
             <div class="email">
                 <span><i class="fa-solid fa-envelope"></i></span>
                 <h4>Email</h4>
-                <h5><a href="mailto:luisinamedina@icloud.com">luisinamedina@icloud.com</a></h5>
+                <h5><a href="mailto:luisinamedina@icloud.com">luisinamedina@icloud.com</a>
+                </h5>
             </div>
             <div class="phone">
                 <span><i class="fa-solid fa-phone"></i></span>
