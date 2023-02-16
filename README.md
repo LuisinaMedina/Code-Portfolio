@@ -6,7 +6,7 @@
 
 
 ## Demo Screenshot
-
+!<div align="center"> ![This is an image](/Images/demoscreenshot.png)</div>
 ## Demo Link to Deployed Website
 
 ## Sections

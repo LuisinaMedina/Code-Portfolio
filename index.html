@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Portfolio</title>
+    <title>Luisina Medina</title>
     <link rel="icon" href="/Images/favicon.png">
 </head>
 
@@ -21,14 +21,14 @@
 
     <!--------START HEADER SECTION--------->
     <header>
-        <nav class="nav-bar">
+        <nav class="nav-bar" id="nav-bar">
             <div class="logo">LUISINA MEDINA</div>
             <input type="checkbox" id="nav-toggle">
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <ul class="nav-links" id="nav-links">
+                <li><a class="link" href="#home">Home</a></li>
+                <li><a class="link" href="#about">About</a></li>
+                <li><a class="link" href="#projects">Projects</a></li>
+                <li><a class="link" href="#contact">Contact</a></li>
             </ul>
             <label for="nav-toggle" class="hamburger">
                 <div class="line"></div>
@@ -45,11 +45,11 @@
             <div class="home-content">
                 <div class="text-1"> Hi, My name is</div>
                 <div class="text-2"> Luisina Medina</div>
-                <div class="text-3"> And I am a <span class="typewriter"></span></div>
+                <div class="text-3"> And I am <span class="typewrite"></span></div>
                 <a href="#contact"><button class="contact-button">Contact Now</button></a>
             </div>
             <div class="my-image">
-                <img src="images/myimgg.png" alt="My personal image" width="500" height="500">
+                <img src="images/myimgg.png" alt="My personal image" class="my-img">
             </div>
         </section>
         <!--------ASIDE SOCIAL ICONS -------->
@@ -82,6 +82,9 @@
                     confident in working independently as well as collaborating in rapidly changing environments.
 
                 </p>
+                <div class="download-resume">
+                    <a href="/Resume/LuisinaMedina.pdf" download="">DOWNLOAD RESUME</a>
+                </div>
             </div>
             <div class="container1">
                 <div class="skill-box">
@@ -123,7 +126,7 @@
             </div>
         </div>
     </section>
-    <div class=" line-one">
+    <div class="line-one">
         <h3>HTML CSS JAVASCRIPT</h3>
     </div>
     <div class="line-two">
@@ -142,14 +145,15 @@
                         height="250" class="image"></a>
             </div>
             <div class="background-wrapper">
-                <a href="" target="_blank"><img src="/Images/img2.png" width="300" height="250" class="image"></a>
+                <a href="https://luisinamedina.vercel.app" target="_blank"><img src="/Images/img4.png" width="300"
+                        height="250" class="image"></a>
             </div>
         </div>
 
     </section>
     <!---------START CONTACT SECTION---------->
     <section class="contact-section" id="contact">
-        <form class="contact-form">
+        <form action="https://formsubmit.co/luisinamedina@icloud.com" method="POST" class="contact-form" id="form">
             <h3 class="horizontal-line">CONTACT ME</h3>
             <h3 class="sub-title">Get In Touch</h3>
 
@@ -157,11 +161,10 @@
             <label for="name"></label>
             <input type="email" placeholder="Email" id="email" name="email" required>
             <label for="email"></label>
-            <input type="text" placeholder="Subject" id="subject" name="subject" required>
-            <label for="subject"></label>
-            <textarea id="message" placeholder="Your Message" name="message" rows="10" cols="30" required></textarea>
+            <textarea class="message" placeholder="Your Message" id="message" name="message" rows="10" cols="30"
+                required></textarea>
             <label for="message"></label>
-            <button type="submit" class="btn-send">SEND MESSAGE</button>
+            <button type="submit" class="btn-send" id="btn-send">SEND MESSAGE</button>
         </form>
         <aside class="contact-info">
             <div class="location">
@@ -198,8 +201,18 @@
         </div>
     </footer>
     <!----------END FOOTER SECTION------------->
+    <!----------SCROLL TOP---------------->
+    <button class="scroll-up" id="scroll-up">
+        <i class="fa-solid fa-angles-up"></i>
+    </button>
+
+
 
     <script src="app.js"></script>
+
+
+
+
 </body>
 
 </html>
